@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --font1: 'Poppins', sans-serif;
+  --ColorText: #D7C6AC;
+  --BorderCard: #3d3d3d;
+  --BGCard: #181715; 
+  --BGHeader : var(--BGCard);
+  --BGButton: var(--ColorText);
+  --ColorButton: #1d1e1f;
+  --BGBody: #0E0E0E;
+}
+
+*, body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: var(--BGBody);
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--ColorText);
+  color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ColorText);
+}
+
+html {
+  font-size: 90%;
+}
+
+.section {
+  background: var(--BGBody);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  body, html {
+    font-size: 82%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body, html {
+    font-size: 70.5%;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body, html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
